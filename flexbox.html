@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexbox</title>
     <style>
+      .el {
+        /* 
+        DEFAULTS:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        */
+
+        /* flex-basis: 100px; */
+        flex: 1;
+      }
+
       .el--1 {
         background-color: blueviolet;
       }
@@ -40,6 +52,10 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* gap: 30px; */
       }
     </style>
   </head>
