@@ -5,6 +5,7 @@
 - Tutorial for CSS Layouts
 - [GitHub - Jonas Schmedtmann](https://github.com/jonasschmedtmann)
 - [GitHub - Original Repo](https://github.com/jonasschmedtmann/html-css-course)
+- [codingheroes - JONAS' RESOURCES FOR HAND-CRAFTING BEAUTIFUL AND PERFORMANT WEBSITES](https://codingheroes.io/resources/)
 
 &nbsp;
 

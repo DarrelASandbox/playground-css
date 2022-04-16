@@ -5,6 +5,7 @@
 - Tutorial for CSS Layouts
 - [GitHub - Jonas Schmedtmann](https://github.com/jonasschmedtmann)
 - [GitHub - Original Repo](https://github.com/jonasschmedtmann/html-css-course)
+- [codingheroes - JONAS' RESOURCES FOR HAND-CRAFTING BEAUTIFUL AND PERFORMANT WEBSITES](https://codingheroes.io/resources/)
 
 &nbsp;
 
@@ -89,6 +90,22 @@
 > Modifier: Flags of blocks or elements. Means we can use them to change appearance, behavior or state. Modifier is separated by double dashes. we can give class name as block\_\_element--modifier and style by .block\_\_element--modifier{}
 >
 > Ex: We have one form. Within that form, we have two buttons with different colors. So we can give class names as given in picture.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+> <b>Jarrod: </b>When to use CSS Grid or Flexbox?
+>
+> <b>Jarrod: </b>I had a look through the starter code for 05-Design as suggested and noticed CSS Grid was used to build most individual components of the layout. From my understanding of the previous lectures, Flexbox is used for 1D layouts and CSS Grid for 2D. But in this case all the layouts built with CSS Grid were 1D (usually just a bunch of divs laid out next to each other). Why is CSS Grid used here instead of Flexbox? Can anyone explain in what circumstances exactly we are meant to use Flexbox or CSS Grid?
+
+> <b>Sebastian: </b>A fine question Jarrod!
+>
+> Today I like to use CSS Grid for all things layout, and Flexbox only for minor alignment adjustments (e.g. stuff that can be fixed just by using display: flex). In the beginning, though, I found it easier to use CSS Grid for the more general layout - arranging the main components of the page - and flexbox for the more intricate details therein.
+>
+> I enjoyed reading [this](https://blog.logrocket.com/flexbox-vs-css-grid/) article on the topic, it was really well explained. I hope you enjoy it too, and find it as informative as I did. Success in your career, and let me know if you need anything else. :)
 
 &nbsp;
 
