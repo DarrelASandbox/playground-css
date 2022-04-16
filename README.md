@@ -10,16 +10,21 @@
 
 ## Notes
 
-- [MDN - Mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
 - [Malven Co. - Flexbox cheatsheet](https://flexbox.malven.co/)
-- [FLEXBOX FROGGY](https://flexboxfroggy.com/)
-- [mastery.games](https://mastery.games/)
+- [Malven Co. - Grid cheatsheet](https://grid.malven.co/)
+- [MDN - Mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
+- [stackoverflow - Areas covered by Flexbox which are difficult or impossible to achieve with Grid](https://stackoverflow.com/questions/55064488/areas-covered-by-flexbox-which-are-difficult-or-impossible-to-achieve-with-grid)
+- [CSS-TRICKS - Does CSS Grid Replace Flexbox?](https://css-tricks.com/css-grid-replace-flexbox/)
 
 ### Challenges
 
+- [mastery.games](https://mastery.games/)
+- [FLEXBOX FROGGY](https://flexboxfroggy.com/)
+- [GRID GARDEN](https://cssgridgarden.com/)
 - [Section 3 - Challenge 3 - Position](https://codepen.io/jonasschmedtmann/pen/dyNwwGP/7a64f0845fd4f6439b63203371edbcb1)
 - [Section 4 - Challenge 1 - Floats](https://codepen.io/jonasschmedtmann/pen/eYgbXrV/1a12771af64312342aa5a5f45bd2347c)
 - [Section 4 - Challenge 2 - Flexbox](https://codepen.io/jonasschmedtmann/pen/MWJZZQL/c8e97f50f726b8e57ff58068647cde00)
+- [Section 4 - Challenge 3 - Flexbox](https://codepen.io/jonasschmedtmann/pen/wvgREqP/ddc3ec3843c753ee03e9525df6c4a1f1)
 
 &nbsp;
 
@@ -66,3 +71,27 @@
 > If you use flex-basis: auto; then it will check for width or height value based on main axis. If width or height is not set then it will automatically take content width or height. hope it would clarify your question. thank you for this question
 
 > <b>Jonas: </b>Just want to add to Boobalan's answer that using <code>width</code> on a flex items will sometimes interfere with size calculations of other elements. I have had problems with it in the past, and so I advise to never use <code>width</code> on flex items.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+> <b>Mykhailo: </b>Why do you use double dash in classes?
+
+> <b>Boobalan: </b>Jonas is using BEM (Block Element Modifier) naming convention. It is very good practice for giving meaningful names for classes.
+>
+> Block: Standalone entity that is meaningful on its own. we can give class name as block and style by .block{}
+>
+> Element: Part of block and have no standalone meaning. Element is separated by double underscores. we can give class name as block\_\_element. and style by .block\_\_element{}
+>
+> Modifier: Flags of blocks or elements. Means we can use them to change appearance, behavior or state. Modifier is separated by double dashes. we can give class name as block\_\_element--modifier and style by .block\_\_element--modifier{}
+>
+> Ex: We have one form. Within that form, we have two buttons with different colors. So we can give class names as given in picture.
+
+&nbsp;
+
+---
+
+&nbsp;
