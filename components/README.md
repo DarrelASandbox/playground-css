@@ -29,3 +29,23 @@
 ---
 
 &nbsp;
+
+> <b>Janko: </b>Question about &lt;button&gt; tag
+>
+> Is there a rule explaining why we should never use &lt;button&gt; element when decorating links? Because you are using &lt;a&gt; element and decorating it just like a button. Is that only situation when we should decorate something like a button and don't use &lt;button&gt; tag itself?
+
+> <b>Sebastian: </b>Let's see this choice from a semantics and accessibility viewpoint:
+>
+> Links (&lt;a&gt;) are for "going someplace" such as "jumping to a different section of a page, going to another URL, etc. Whereas, buttons &lt;button&gt; are for "doing something" such as a function on the page to expand/collapse a menu, submit a form or etc.
+>
+> Adding to this, there are some accessibility concerns when using links styled as buttons instead of plain buttons, as you can read [here](https://a11y-101.com/design/button-vs-link). However, &lt;button&gt; is indeed considered more semantic, since it is easier for other devs (and search engine bots) to understand its intended purpose in our html code at a glance.
+>
+> One reason we use links instead of button elements is that those elements have innate styling that we want to tweak to make our own custom button, and it's a bit more work to strip away that styling when building our own than to start from zero with a link.
+>
+> In other words, when you customize a button, it's simply easier to start from zero - from a link - than to have to first strip away undesirable default styling, and then introduce your own as well. It saves us a whole first step - stripping the old styling away.
+
+&nbsp;
+
+---
+
+&nbsp;
