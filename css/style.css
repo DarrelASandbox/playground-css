@@ -38,6 +38,30 @@ Deafu;t: 9px;
 
 */
 
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -59,9 +83,9 @@ body {
   color: #555;
 }
 
-/**********************/
+/************************/
 /* GENERAL COMPONENTS */
-/**********************/
+/************************/
 
 .heading-primary {
   font-size: 5.2rem;
@@ -117,9 +141,9 @@ body {
   margin-right: 1.6rem !important;
 }
 
-/**********************/
+/************************/
 /* HEADER */
-/**********************/
+/************************/
 
 .header {
   display: flex;
@@ -136,9 +160,9 @@ body {
   height: 2.2rem;
 }
 
-/**********************/
+/************************/
 /* NAVIGATION */
-/**********************/
+/************************/
 
 .main-nav-list {
   list-style: none;
@@ -175,9 +199,9 @@ body {
   background-color: #cf711f;
 }
 
-/**********************/
+/************************/
 /* HERO SECTION */
-/**********************/
+/************************/
 
 .section-hero {
   background-color: #fdf2e9;
@@ -235,4 +259,13 @@ body {
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/************************/
+/* HOW IT WORKS SECTION */
+/************************/
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
