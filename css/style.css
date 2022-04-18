@@ -198,7 +198,7 @@
 
 .step-img-box::after {
   width: 45%;
-  padding-bottom: 50%;
+  padding-bottom: 45%;
   background-color: #fae5d3;
   z-index: -1;
 }
@@ -266,14 +266,14 @@
   margin-bottom: 3.2rem;
 }
 
-.meals-attributes {
+.meal-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.meals-attribute {
+.meal-attribute {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
@@ -313,7 +313,7 @@
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  row-gap: 4.8rem;
   column-gap: 8rem;
 }
 
@@ -348,7 +348,7 @@
 .gallery-item img {
   display: block;
   width: 100%;
-  transition: all, 0.4s;
+  transition: all 0.4s;
 }
 
 .gallery-item img:hover {
@@ -419,13 +419,13 @@
 }
 
 .plan-price span {
-  font-style: 3rem;
+  font-size: 3rem;
   font-weight: 500;
   margin-right: 0.8rem;
 }
 
 .plan-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   color: #6f6f6f;
 }
@@ -474,7 +474,7 @@
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #e67e22;
+  /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
 
