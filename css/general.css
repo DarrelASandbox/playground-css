@@ -26,6 +26,8 @@ Primary: #e67e22
 Tints: 
 #fdf2e9
 #fae5d3
+#eb984e
+#45260a
 
 Shades: #cf711f
 Accents:
@@ -35,6 +37,8 @@ Greys:
 #333
 
 --- 05 SHADOWS
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
 
@@ -141,6 +145,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -151,9 +156,26 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
+  /* Only necessary for .btn*/
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
   /* Put transition on original "state" */
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn--full:link,
@@ -217,6 +239,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /************************/

@@ -11,6 +11,8 @@
 
 ## Notes
 
+- [When to use IMG vs. CSS background-image?](https://stackoverflow.com/questions/492809/when-to-use-img-vs-css-background-image)
+
 &nbsp;
 
 ---
