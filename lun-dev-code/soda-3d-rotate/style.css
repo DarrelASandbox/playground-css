@@ -52,3 +52,20 @@
 .banner:has(.product:hover) .rock img:nth-child(1) {
   transform: translate(-50%) translateY(50px);
 }
+.banner .rock img:nth-child(2) {
+  height: 50%;
+  left: 0;
+  bottom: 0;
+}
+.banner:has(.product:hover) .rock img:nth-child(2) {
+  transform: translate(-100px) translateY(100px);
+}
+.banner .rock img:nth-child(3) {
+  height: 100%;
+  right: 0;
+  bottom: -100px;
+  rotate: -25deg;
+}
+.banner:has(.product:hover) .rock img:nth-child(3) {
+  transform: translate(100px) translateY(100px);
+}
