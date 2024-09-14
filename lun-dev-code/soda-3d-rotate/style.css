@@ -69,3 +69,10 @@
 .banner:has(.product:hover) .rock img:nth-child(3) {
   transform: translate(100px) translateY(100px);
 }
+
+.banner .product .soda:nth-child(2) {
+  opacity: 0;
+}
+.banner .product:hover .soda:nth-child(2) {
+  opacity: 1;
+}
