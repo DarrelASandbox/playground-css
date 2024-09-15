@@ -59,3 +59,49 @@ body {
   font-family: Pacifico;
   color: #fff;
 }
+
+.intro {
+  min-height: 50vh;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.intro p {
+  width: 700px;
+  max-width: 100%;
+  text-align: center;
+}
+.intro button {
+  background-color: #fd0003;
+  padding: 10px 50px;
+  border: 1px solid #591f1d;
+  color: #fff;
+  font-family: 500;
+  border-radius: 5px;
+}
+
+.animation-show {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.7s;
+}
+.active .animation-show {
+  transform: translateY(0);
+  opacity: 1;
+}
+.animation-show:nth-child(2) {
+  transition-delay: 0.3;
+}
+.animation-show:nth-child(3) {
+  transition-delay: 0.6;
+}
+.animation-show:nth-child(4) {
+  transition-delay: 0.9;
+}
