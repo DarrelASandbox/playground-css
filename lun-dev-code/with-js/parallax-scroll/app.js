@@ -20,4 +20,15 @@ window.addEventListener('scroll', (e) => {
   });
 
   titleBanner.style.transform = `translateY(${(top * 4) / 2}px)`;
+
+  /* 
+  parallax scroll in tab
+  when tab's position is less than 500px
+  from scrollbar position add active class to animation and vice versa
+   */
+  listTab.forEach((tab) =>
+    tab.offsetTop - top < 550
+      ? tab.classList.add('active')
+      : tab.classList.remove('active')
+  );
 });
