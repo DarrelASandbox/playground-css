@@ -105,3 +105,16 @@ body {
 .animation-show:nth-child(4) {
   transition-delay: 0.9;
 }
+
+.library {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  color: #fff;
+}
+.library img {
+  width: 90%;
+  height: 500px;
+  object-fit: cover;
+}
