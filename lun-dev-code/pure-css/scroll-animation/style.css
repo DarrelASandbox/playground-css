@@ -239,3 +239,20 @@ footer .content {
     transform: translateY(0) scale(1);
   }
 }
+
+.autoBlur {
+  animation: autoBlurAnimation linear both;
+  animation-timeline: view();
+}
+@keyframes autoBlurAnimation {
+  0% {
+    filter: blur(40px);
+  }
+  45%,
+  55% {
+    filter: blur(0);
+  }
+  100% {
+    filter: blur(40px);
+  }
+}
