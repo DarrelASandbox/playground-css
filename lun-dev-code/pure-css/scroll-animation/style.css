@@ -52,7 +52,7 @@ header img {
 .banner .image {
   width: 100%;
   height: 600px;
-  background-image: url(images/banner.png);
+  background-image: url(assets/banner.png);
   position: relative;
 }
 .banner .image img {
@@ -209,5 +209,18 @@ footer .content {
     font-size: 4em;
     display: block;
     margin-bottom: 100px;
+  }
+}
+
+.autoRotate {
+  animation: autoRotateAnimation;
+  animation-timeline: view();
+}
+@keyframes autoRotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
