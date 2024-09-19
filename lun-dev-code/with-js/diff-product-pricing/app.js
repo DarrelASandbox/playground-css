@@ -21,6 +21,11 @@ let product = {
   ],
 };
 
+let option = {
+  color: null,
+  size: null,
+};
+
 const initApp = () => {
   title.innerText = product.name;
   description.innerText = product.description;
@@ -29,25 +34,54 @@ const initApp = () => {
 
   let listColors = product.children.map((child) => child.color);
   listColors = Array.from(new Set(listColors));
-  console.log(listColors);
-
   listColors.forEach((color) => {
     let li = document.createElement('li');
     li.style.backgroundColor = color;
     li.setAttribute('data-color', color);
     colors.appendChild(li);
+    li.addEventListener('click', () => {
+      option.color = option.color !== color ? color : null;
+      updatePrice();
+    });
   });
 
   let listSizes = product.children.map((child) => child.size);
   listSizes = Array.from(new Set(listSizes));
-  console.log(listSizes);
-
   listSizes.forEach((size) => {
     let li = document.createElement('li');
     li.innerText = size;
     li.setAttribute('data-size', size);
     sizes.appendChild(li);
+    li.addEventListener('click', () => {
+      option.size = option.size !== size ? size : null;
+      updatePrice();
+    });
   });
 };
 
 initApp();
+
+const updatePrice = () => {
+  liColorOldActive = colors.querySelector('li.active');
+  if (liColorOldActive) liColorOldActive.classList.remove('active');
+  if (option.color) {
+    let liColorActive = colors.querySelector('li[data-color="' + option.color + '"]');
+    liColorActive.classList.add('active');
+  }
+
+  liSizeOldActive = sizes.querySelector('li.active');
+  if (liSizeOldActive) liSizeOldActive.classList.remove('active');
+  if (option.size) {
+    let liSizeActive = sizes.querySelector('li[data-size="' + option.size + '"]');
+    liSizeActive.classList.add('active');
+  }
+
+  if (option.color === null || option.size === null) {
+    price.innerText = product.price;
+  } else {
+    let childFound = product.children.filter(
+      (child) => child.color === option.color && child.size === option.size
+    )[0];
+    price.innerText = childFound.price;
+  }
+};
