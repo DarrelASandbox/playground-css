@@ -1,0 +1,2 @@
+- [Building Blurry, Animated Background Shapes with Tailwind CSS](https://www.youtube.com/watch?v=Tmkr2kKUEgU)
+- [qoals](https://qoals.com)
